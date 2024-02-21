@@ -1,0 +1,27 @@
+<h1>Accounts</h1>
+<hr>
+<button>Refresh</button>
+<button (click)="sortAsc();">Sort Type</button>
+<table>
+   <tbody>
+        <tr *ngFor="let acc of accounts;">
+            <td>{{acc.id}}</td>
+
+            <td>{{acc.type}}</td>
+
+            <td contenteditable="true">{{acc.balance}}</td>
+            </tr>
+    </tbody>
+    </table>
+    <hr>
+    <label>Account Type : </label>
+    <select name="type" [(ngModel)]="account.type">
+        <option>SAVING</option>
+
+        <option>CHEQUE</option>
+    </select>
+
+    <label>Balance : </label>
+    <input type="number" name="balance" [(ngModel)]="account.balance" />
+
+    <button type="submit" (click)="addAccount();"><label>+</label></button>

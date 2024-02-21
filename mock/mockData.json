@@ -1,0 +1,64 @@
+{
+  "accounts": [
+    {
+      "id": "12345678901",
+      "type": "SAVING",
+      "balance": 2000.15
+    },
+    {
+      "id": "12345678904",
+      "type": "RRSP",
+      "balance": 5000
+    },
+    {
+      "id": "12345678905",
+      "type": "RESP",
+      "balance": 10000
+    },
+    {
+      "id": "12345678906",
+      "type": "TFSA",
+      "balance": 3000
+    },
+    {
+      "id": "12345678907",
+      "type": "INVESTMENT",
+      "balance": 300000
+    },
+    {
+      "id": "12345678909",
+      "type": "USSAVING",
+      "balance": 20000
+    },
+    {
+      "id": "12345678910",
+      "type": "USCHEQUE",
+      "balance": 10000
+    },
+    {
+      "type": "SAVING",
+      "balance": 100,
+      "id": "12345678911"
+    },
+    {
+      "type": "INVESTMENT",
+      "balance": 565656,
+      "id": "12345678918"
+    },
+    {
+      "type": "CHEQUE",
+      "balance": 2323232,
+      "id": "12345678919"
+    },
+    {
+      "type": "INVESTMENT",
+      "balance": 3333,
+      "id": "12345678920"
+    },
+    {
+      "id": "fb87",
+      "balance": 23,
+      "type": "CHEQUE"
+    }
+  ]
+}

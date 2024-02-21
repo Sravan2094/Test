@@ -54,11 +54,6 @@
       "type": "INVESTMENT",
       "balance": 3333,
       "id": "12345678920"
-    },
-    {
-      "id": "fb87",
-      "balance": 23,
-      "type": "CHEQUE"
     }
   ]
 }

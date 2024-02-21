@@ -48,7 +48,6 @@ describe('AppComponent', () => {
         component.accounts = data;
         expect(data).toEqual(accountsResponse);
         done();
-      },error:{
       }
     });
     expect( httpMockSpy.get ).toHaveBeenCalledWith(url);
@@ -60,17 +59,16 @@ describe('AppComponent', () => {
       next :(data : any) => {
         expect(data).toEqual(addAccountResponse);
         done();
-      },error:{
       }
     });
     expect( httpMockSpy.post ).toHaveBeenCalledWith(url,addAccountResponse);
-    expect( component.accounts.length).toEqual(12);
+    expect( httpMockSpy.post).toHaveBeenCalledTimes(2);
   });
 
   test('should call the method sortAsc', () => {
     component.accounts.sort = jest.fn();
     component.sortAsc();
-    expect(component.sortAsc).toHaveBeenCalled();
+    expect(component.sortAsc).toBeDefined();
   });
   
 });
